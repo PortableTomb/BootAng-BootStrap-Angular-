@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Chapter 1: Bootstrap/Angular App</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+   
+    <script src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/calculator.js"></script>
+</head>
+
+<body class="stylee">
+<img src="mrcalc.png" height="200px" width="200px">
+<h4>MR.CALCULATOR</h4>
+ <div ng-app="CalculatorApp" ng-controller="CalculatorController">
+  <p><input type="number" ng-model="a"></p>
+  <p><input type="number" ng-model="b"></p>
+  <p><select ng-model="operator">
+        <option>+</option>
+        <option>*</option>
+        <option>-</option>
+        <option>/</option>
+     </select></p>
+  <p id="box">{{ result() }}</p>
+ </div>
+
+</body>
+</html>
